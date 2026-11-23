@@ -1,0 +1,13 @@
+media:
+    menu:
+        root: Médias
+    index: Médias
+    search: Recherche
+    preview: Aperçu
+    file: Fichier
+    original_name: Nom du fichier
+    alt: Texte alternatif
+    alt_help: "Ce que montre l'image, pour qui ne la voit pas. Vide pour une image décorative."
+    dimensions: Dimensions
+    size: Poids
+    created_at: Ajouté le

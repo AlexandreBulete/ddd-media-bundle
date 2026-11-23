@@ -1,0 +1,13 @@
+media:
+    menu:
+        root: Media
+    index: Media
+    search: Search
+    preview: Preview
+    file: File
+    original_name: File name
+    alt: Alternative text
+    alt_help: "What the picture shows, for whom cannot see it. Empty for a decorative one."
+    dimensions: Dimensions
+    size: Size
+    created_at: Added on

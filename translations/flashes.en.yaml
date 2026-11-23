@@ -1,0 +1,3 @@
+domain_refusal:
+    media_in_use_exception: "\"%name%\" cannot be deleted: used by %usages%."
+    unsupported_file_type_exception: "Files of this type are not accepted (%mimeType%). Accepted: JPEG, PNG, WebP, GIF, AVIF."

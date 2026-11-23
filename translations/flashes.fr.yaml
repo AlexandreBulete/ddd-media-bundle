@@ -1,0 +1,3 @@
+domain_refusal:
+    media_in_use_exception: "Impossible de supprimer « %name% » : utilisé par %usages%."
+    unsupported_file_type_exception: "Ce type de fichier n'est pas accepté (%mimeType%). Formats acceptés : JPEG, PNG, WebP, GIF, AVIF."
