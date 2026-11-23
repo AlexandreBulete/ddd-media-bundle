@@ -94,11 +94,22 @@ final readonly class BookCoverUsage implements MediaUsageInterface
 shown as a flash message in the back office — while one answers. The resized
 copies of a removed media are deleted with it.
 
-## Upload field
+## A picture sent from another form
 
 `MediaUploadType` is a file field accepting what the library keeps, within the
-configured size: add it to any form that takes a picture (a cover, a visual),
-then dispatch `UploadMedia` with the uploaded file.
+configured size: add it to any form that takes a picture (a cover, a visual).
+`AttachedMedia` then files the upload and lets it go:
+
+```php
+$visual = $attachedMedia->attach($form->visualFile, 'Illustration of …'); // a MediaId
+// … point the record at $visual, then drop the one it replaced:
+$attachedMedia->release($previous);
+```
+
+`release()` never fails: a media still in use somewhere else stays in the
+library, one already gone is ignored. Call it on the picture a record
+replaces, takes off, or drops when the record is deleted — a picture sent
+from a record's form belongs to that record.
 
 ## Configuration
 
