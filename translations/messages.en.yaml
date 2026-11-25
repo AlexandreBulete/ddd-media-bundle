@@ -1,4 +1,8 @@
 media:
+    ui:
+        media: Media
+        new_media: Add a picture
+        edit_media: Edit media
     menu:
         root: Media
     index: Media
